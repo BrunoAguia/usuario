@@ -28,7 +28,7 @@ public class Endereco {
     private String cidade;
     @Column(name = "estado", length = 2)
     private String estado;
-    @Column(name = "cep", length = 9)
+    @Column(name = "cep", length = 20)
     private String cep;
     @OneToMany(cascade = CascadeType.ALL)
     @JoinColumn(name = "usuario_id", referencedColumnName = "id")
